@@ -55,7 +55,7 @@ class AddTodo extends Component {
          "Content-Type": "application/json"
       }
     }).then(res => {
-        console.log(res.data.message);
+        // console.log(res.data.message);
     });
 
     if (this.state.content.trim()) {

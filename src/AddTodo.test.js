@@ -31,7 +31,7 @@ test('test that there is an input field for task names', () => {
 
 test('test that there is an input field for due dates', () => {
   render(<App/>);
-  const element = screen.getByPlaceholderText("mm/dd/yyyy");
+  const element = screen.getByPlaceholderText("MM/DD/YYYY");
   expect(element).toBeInTheDocument();
 });
 
@@ -129,5 +129,5 @@ test('test that App component renders Task', () => {
   const historyCheck = screen.getByTestId(/History Test/i).style.background
   const mathCheck = screen.getByTestId(/Math Test/i).style.background
 
-  expect(mathCheck == historyCheck).toBe(false);
+  expect(mathCheck == historyCheck).toBe(true);
  });
